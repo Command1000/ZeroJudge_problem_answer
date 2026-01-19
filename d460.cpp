@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main (void){
+
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+
+int a;
+cin>>a;
+
+
+if(a<=5){
+	cout<<0;
+}
+else if(a>=6&&a<=11){
+	cout<<590;
+}
+else if (a>=12&&a<=17){
+	cout<<790;
+}
+else if (a>=18&&a<=59){
+	cout<<890;
+}
+else {
+	cout<<399;
+}
+
+
+
+
+
+
+
+return 0 ;
+}
