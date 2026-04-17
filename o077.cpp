@@ -9,8 +9,6 @@ a=h*w;
 cin>>h>>w>>n;
 int v[50][50]={0};
 int r,c,t,x;
-
-
 for(int i=0;i<n;i++){
 	cin>>r>>c>>t>>x;
 	for(int i=0;i<h;i++){
