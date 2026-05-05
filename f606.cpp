@@ -55,5 +55,5 @@ while(k--){
 cout<<mincost;
 
 
-	return 0;
+return 0;
 }
