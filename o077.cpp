@@ -4,8 +4,6 @@ using namespace std;
 int main(void){
 
 int h,w,n;
-int a=0;
-a=h*w;
 cin>>h>>w>>n;
 int v[50][50]={0};
 int r,c,t,x;
