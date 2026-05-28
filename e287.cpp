@@ -6,7 +6,7 @@ int min=2147483647;
 int ct=0;
 bool safe;
 int ni,nj;
-int logi,logj,li,lj;
+int logi,logj;
 cin>>n>>m;
 vector<vector<int> > box(n,vector<int>(m,0));
 for(int i=0;i<n;i++){
