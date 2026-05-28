@@ -35,41 +35,39 @@ while(1){
 		if(logi+1>=0&&logi+1<n){
 			if(box[logi+1][logj]<minn&&box[logi+1][logj]!=-1){
 				minn=box[logi+1][logj];
-              	  		ni=logi+1;
-                		nj=logj;
+              	ni=logi+1;
+                nj=logj;
 				safe=true;
 			}
 		}
 
                 
-                if(logj+1>=0&&logj+1<m){
-			if(box[logi][logj+1]<minn&&box[logi][logj+1]!=-1){
-				minn=box[logi][logj+1];
-                		ni=logi;
-                 		nj=logj+1;
-				safe=true;
-			}
-                }
+            if(logj+1>=0&&logj+1<m){
+				if(box[logi][logj+1]<minn&&box[logi][logj+1]!=-1){
+					minn=box[logi][logj+1];
+                	ni=logi;
+                 	nj=logj+1;
+					safe=true;
+				}
+            }
 
                 
-                if(logj-1>=0&&logj-1<m){
-			if(box[logi][logj-1]<minn&&box[logi][logj-1]!=-1){
-				minn=box[logi][logj-1];
-            			ni=logi;
-                		nj=logj-1;
-				safe=true;
-			}
-                }
+            if(logj-1>=0&&logj-1<m){
+				if(box[logi][logj-1]<minn&&box[logi][logj-1]!=-1){
+					minn=box[logi][logj-1];
+            		ni=logi;
+                	nj=logj-1;
+					safe=true;
+				}
+            }
 			if(!safe){
 			break;
-		}
+				}
 	logi=ni;
 	logj=nj;
-	box[logi][logj]=-1;
-		if(ct!=1000000){
-			ct+=minn;
-		}	
+	box[logi][logj]=-1;	
+	ct+=minn;
 }
 cout<<ct;
-	return 0;
+return 0;
 }
